@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package gutenberg-starter-theme
+ * @package lithosphere
  */
 
 get_header(); ?>

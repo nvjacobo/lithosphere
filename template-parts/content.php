@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package gutenberg-starter-theme
+ * @package lithosphere
  */
 
 ?>
@@ -23,7 +23,7 @@
 
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php gutenberg_starter_theme_posted_on(); ?>
+			<?php lithosphereposted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php
 		endif; ?>
@@ -34,7 +34,7 @@
 			the_content( sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'gutenberg-starter-theme' ),
+					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'lithosphere' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -45,13 +45,13 @@
 			) );
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'gutenberg-starter-theme' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'lithosphere' ),
 				'after'  => '</div>',
 			) );
 		?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php gutenberg_starter_theme_entry_footer(); ?>
+		<?php lithosphereentry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
