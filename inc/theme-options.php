@@ -9,7 +9,7 @@ function lithosphere_add_options_page() {
 		'Theme Options',
 		'manage_options',
 		'lithosphere-options',
-		'lithosphereoptions_page'
+		'lithosphere_options_page'
 	);
 
 	// Call register settings function
