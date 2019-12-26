@@ -23,7 +23,7 @@ function lithosphere_custom_header_setup() {
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'lithosphereheader_style',
+		'wp-head-callback'       => 'lithosphere_header_style',
 	) ) );
 }
 add_action( 'after_setup_theme', 'lithosphere_custom_header_setup' );
