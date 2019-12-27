@@ -103,14 +103,14 @@ function lithosphere_fonts_url() {
 
 	/*
 	 *Translators: If there are characters in your language that are not
-	 * supported by Noto Serif, translate this to 'off'. Do not translate
+	 * supported by Lato, translate this to 'off'. Do not translate
 	 * into your own language.
 	 */
-	$notoserif = esc_html_x( 'on', 'Noto Serif font: on or off', 'lithosphere' );
+	$libreswitch = esc_html_x( 'on', 'Libre Franklin font: on or off', 'lithosphere' );
 
-	if ( 'off' !== $notoserif ) {
+	if ( 'off' !== $libreswitch ) {
 		$font_families = array();
-		$font_families[] = 'Noto Serif:400,400italic,700,700italic';
+		$font_families[] = 'Libre Franklin:400,400italic,700,700italic';
 
 		$query_args = array(
 			'family' => urlencode( implode( '|', $font_families ) ),
