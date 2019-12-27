@@ -116,7 +116,7 @@
 --------------------------------------------------------------*/
 
 .wp-block-group > .wp-block-group__inner-container > * {
-  max-width: 900px;
+  max-width: 860px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -176,6 +176,18 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   padding: 0 14px;
 }
 
+ul.wp-block-latest-posts a{
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+ul.wp-block-latest-posts .wp-block-latest-posts__post-excerpt a{
+  font-size: 80%;
+  font-weight: 400;
+  color: #888;
+}
+
 /*--------------------------------------------------------------
 # List
 --------------------------------------------------------------*/
@@ -183,7 +195,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .entry-content ul,
 .entry-content ol {
   margin: 1.5em auto;
-  max-width: 900px;
+  max-width: 860px;
   list-style-position: outside;
 }
 
@@ -297,7 +309,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 --------------------------------------------------------------*/
 
 .wp-block-video video {
-  max-width: 900px;
+  max-width: 860px;
 }
 
 /*--------------------------------------------------------------
@@ -338,4 +350,16 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .has-very-dark-gray-background-color {
   background-color: #444;
+}
+
+/* navigation */
+
+.wp-block-navigation>ul li,
+.wp-block-social-links>ul li{
+  margin-left: 0;
+}
+
+.wp-block-navigation,
+.wp-block-social-links{
+  border-top: 1px solid #ddd;
 }

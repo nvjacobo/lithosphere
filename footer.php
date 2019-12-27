@@ -20,7 +20,7 @@
 		<span class="sep"> | </span>
 		<?php
 			/* translators: 1: Theme name, 2: Theme author. */
-			printf( esc_html__( 'Theme: %s', 'lithosphere' ), '<a href="https://github.com/WordPress/lithosphere/">Gutenberg</a>' );
+			printf( esc_html__( 'Theme: %s', 'lithosphere' ), '<a href="https://github.com/karmatosed/lithosphere/">Lithosphere</a>' );
 		?>
 	</div><!-- .site-info -->
 </footer><!-- #colophon -->
