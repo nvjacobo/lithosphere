@@ -138,8 +138,12 @@ h6 {
 }
 
 mark {
-  background: #ff0;
+  background: #fff200;
   color: #000;
+}
+
+::selection{
+  background: #fff200;
 }
 
 small {
@@ -289,9 +293,8 @@ optgroup,
 textarea {
   color: #191e23;
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.8;
+  font-size: 1.125rem;
+  line-height: 1.7;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -363,14 +366,18 @@ big {
 }
 
 .site-header{
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid #ddd;
 }
 
 .site-title {
-	margin: 20px;
-	font-size: 16px;
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 400;
 	line-height: 1.2;
-  color: #333332;
+  color: #fff;
+  background: #000;
+  display: inline-flex;
+  padding: 20px;
 }
 
 .site-title a {
@@ -379,7 +386,6 @@ big {
 }
 
 .site-branding {
-	margin-bottom: 24px;
 }
 
 /*--------------------------------------------------------------
@@ -545,11 +551,13 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: #0073aa;
+  color: #046b99;
+  text-decoration: underline;
+  text-decoration-skip-ink: underline;
 }
 
 a:hover, a:focus, a:active {
-  color: #00a0d2;
+  color: #00cfff;
 }
 
 a:focus {
@@ -563,94 +571,12 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-.main-navigation {
-	clear: both;
-	display: block;
-  margin: 0 auto;
-	max-width: 960px;
-  text-align: center;
-}
-
-.main-navigation ul {
-	display: none;
-	list-style: none;
-	margin: 0;
-	padding-left: 0;
-}
-
-.main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
-	position: absolute;
-	top: 100%;
-	left: -999em;
-	z-index: 99999;
-  text-align: left;
-}
-
-.main-navigation ul ul ul {
-	left: -999em;
-	top: 0;
-}
-
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
-	left: 100%;
-}
-
-.main-navigation ul ul a {
-	width: 200px;
-}
-
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
-  display: block;
-	left: auto;
-}
-
-.main-navigation li {
-	position: relative;
-}
-
-.main-navigation a {
-	display: block;
-	text-decoration: none;
-}
-
-.menu-toggle {
-  padding: 1em;
-}
-
-@media screen and (max-width: 37.5em) {
-	/* Small menu. */
-	.menu-toggle,
-	.main-navigation.toggled ul {
-		display: block;
-    margin: 0 auto;
-	}
-}
-
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .main-navigation a {
-    padding: 0 .5em;
-  }
-}
-
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
-  border-bottom: 1px solid #e2e4e7;
+  border-bottom: 1px solid #ddd;
 	margin: 0 auto 60px;
-  max-width: 960px;
+  max-width: 860px;
 	overflow: hidden;
   padding-bottom: 60px;
 }
@@ -719,7 +645,7 @@ a:hover, a:active {
 
 .alignleft,
 .alignright {
-	max-width: 960px !important;	/* Let's work to make this !important unnecessary */
+	max-width: 860px !important;	/* Let's work to make this !important unnecessary */
 }
 
 .alignleft img,
@@ -814,7 +740,7 @@ a:hover, a:active {
 .page-content,
 .entry-content,
 .entry-summary {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin: 1.5em 0 0;
 }
 
@@ -824,8 +750,13 @@ a:hover, a:active {
 }
 
 .entry-title{
-  font-size: 2.25rem;
+  font-size: 2rem;
   font-weight: 700;
+}
+
+.entry-title a{
+  color: #333;
+  text-decoration: none;
 }
 
 .page-links {
@@ -846,7 +777,7 @@ a:hover, a:active {
   margin: 1.5em auto;
   padding-left: 14px;
   padding-right: 14px;
-  max-width: 960px;
+  max-width: 860px;
 }
 
 .entry-header .wp-post-image {
