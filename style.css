@@ -775,8 +775,8 @@ a:hover, a:active {
 .not-found .page-content,
 .search .entry-summary {
   margin: 1.5em auto;
-  padding-left: 14px;
-  padding-right: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
   max-width: 860px;
 }
 
