@@ -369,3 +369,12 @@ ul.wp-block-social-links li{
 li.wp-block-social-link{
   margin-left: 0;
 }
+
+.wp-block-search{
+  background: #eee;
+  padding: 20px;
+}
+
+.wp-block-search .wp-block-search__input{
+  max-width: 780px;
+}

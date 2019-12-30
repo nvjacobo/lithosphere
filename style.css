@@ -582,7 +582,9 @@ a:hover, a:active {
 }
 
 .nav-links {
-	display: flex;
+  display: flex;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
 .comment-navigation .nav-previous,
@@ -597,6 +599,40 @@ a:hover, a:active {
 .post-navigation .nav-next {
 	text-align: end;
 	flex: 1 0 50%;
+}
+
+ol.comment-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.comment-list li{
+  margin: 0 0 20px 0;
+}
+
+.comment-body{
+  font-size: 1.1rem;
+  padding: 0 0 20px 0;
+}
+
+.comment-meta{
+  font-size: 90%;
+  color: #555;
+}
+
+.comment-meta a{
+  color: #555;
+}
+
+li.pingback .comment-body{
+  font-size: 80%;
+  color: #999
+}
+
+.comment-body img.avatar{
+  display: none;
 }
 
 /*--------------------------------------------------------------
