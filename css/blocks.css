@@ -376,5 +376,6 @@ li.wp-block-social-link{
 }
 
 .wp-block-search .wp-block-search__input{
+  background: #f9f9f9;
   max-width: 780px;
 }
