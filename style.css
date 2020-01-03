@@ -802,7 +802,7 @@ li.pingback .comment-body{
 }
 
 .entry-meta {
-  color: #6c7781;
+  color: var(--heading-color);
   font-size: 90%;
 }
 
@@ -812,7 +812,7 @@ li.pingback .comment-body{
 }
 
 .entry-title a{
-  color: #333;
+  color: var(--heading-color);
   text-decoration: none;
 }
 

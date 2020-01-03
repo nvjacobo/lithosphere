@@ -1,3 +1,9 @@
+/**
+ * File toggle-style.js.
+ *
+ * Allows a toggle for dark/light mode
+ *
+ */
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 const currentTheme = localStorage.getItem('theme');
 
