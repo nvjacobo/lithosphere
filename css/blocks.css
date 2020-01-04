@@ -19,7 +19,23 @@
 # Additional Theme Styles
   ## Color Palette
 --------------------------------------------------------------*/
+:root {
+  --primary-color: #046b99;
+  --secondary-color: #00cfff;
+  --font-color: #191e23;
+  --bg-color: #fff;
+  --heading-color: #191e23;
+  --border-color: #ddd;
+}
 
+[data-theme="dark"] {
+  --primary-color: #046b99;
+  --secondary-color: #00cfff;
+  --font-color: #eee;
+  --bg-color: #161616;
+  --heading-color: #aaa;
+  --border-color: #444;
+}
 /*--------------------------------------------------------------
 # Block Styles
 --------------------------------------------------------------*/
@@ -371,11 +387,11 @@ li.wp-block-social-link{
 }
 
 .wp-block-search{
-  background: #eee;
+  background: var(--border-color);
   padding: 20px;
 }
 
 .wp-block-search .wp-block-search__input{
-  background: #f9f9f9;
+  background: var(--bg-color);
   max-width: 780px;
 }

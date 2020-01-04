@@ -3,7 +3,7 @@ Theme Name: Lithosphere
 Theme URI: https://github.com/karmatosed/lithosphere
 Author: karmatosed
 Author URI: https://tammielister.com
-Description: A simple theme for testing Gutenberg.
+Description: A simple theme to build on.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -293,6 +293,7 @@ th {
   --font-color: #191e23;
   --bg-color: #fff;
   --heading-color: #191e23;
+  --border-color: #ddd;
 }
 
 [data-theme="dark"] {
@@ -301,6 +302,7 @@ th {
   --font-color: #eee;
   --bg-color: #161616;
   --heading-color: #aaa;
+  --border-color: #444;
 }
 
 /*--------------------------------------------------------------
@@ -387,7 +389,7 @@ big {
 }
 
 .site-header{
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .site-title {
@@ -595,7 +597,7 @@ a:hover, a:active {
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--border-color);
 	margin: 0 auto 60px;
   max-width: 860px;
 	overflow: hidden;
@@ -849,7 +851,7 @@ li.pingback .comment-body{
   color: #6c7781;
   font-size: 90%;
   padding-bottom: 40px;
-  border-bottom: 1px solid #e2e4e7;
+  border-bottom: 1px solid var(--border-color);
 }
 
 @media screen and (min-width: 608px) {
